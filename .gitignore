@@ -1,0 +1,12 @@
+# Ignore main.go development files, e.g. main.go.staging
+main.go.*
+
+# Ignore binaries
+bin/*
+
+
+# Ignore everything in example/prompts
+example/prompts/*
+
+# But do not ignore the templates folder
+!example/prompts/templates/
