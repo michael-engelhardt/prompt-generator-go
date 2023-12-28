@@ -1,1 +1,18 @@
-Place your instruction here.
+Refactor my go app.
+Currently it is completely working locally, but I want to change it to have an api and a database, while keeping the cli functionality.
+I splitted the app into 2 main programs: api and cli.
+
+Take the given `main.go` file, and refactor it into the new structure.
+Add api functionality, as well as database storage for the data.
+
+For a start the api should have the following endpoints:
+- `GET /api/prompts` - returns the history of all generated prompts
+- `POST /api/prompts` - generates a new prompt and returns it
+- `GET /api/prompts/{id}` - returns the prompt with the given id
+- `DELETE /api/prompts/{id}` - deletes the prompt with the given id
+
+The database should be a PostgreSQL database, and should have the following table:
+- `prompts` - id, prompt, created_at, updated_at
+
+The cli should have the following commands:
+- `generate` - takes the files from the `templates` folder, and generates a prompt from them, and posts it to the api

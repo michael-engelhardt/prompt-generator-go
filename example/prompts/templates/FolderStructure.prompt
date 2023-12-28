@@ -1,0 +1,32 @@
+Currently this is the planned folder Structure:
+```
+/prompt-generator
+|-- /cmd
+|   |-- /api
+|   |   |-- main.go
+|   |
+|   |-- /cli
+|   |   |-- main.go
+|
+|-- /internal
+|   |-- /api
+|   |   |-- handler.go
+|   |
+|   |-- /db
+|   |   |-- db.go
+|   |
+|   |-- /middleware
+|   |   |-- middleware.go
+|   |
+|   |-- /model
+|       |-- model.go
+|
+|-- /pkg
+|   |-- /utils
+|       |-- utils.go
+|
+|-- .env
+|-- Dockerfile
+|-- go.mod
+|-- go.sum
+```
